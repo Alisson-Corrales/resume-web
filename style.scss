@@ -1,11 +1,12 @@
 body{
     font-family: helvetica;
-    background-color: #040404;
     position: relative;
+    background: url(https://images.pexels.com/photos/2911519/pexels-photo-2911519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
+    background-size: cover;
 
     &::before{
         content: "";
-        background-color: #040404;
+        background: rgba(0,0,0, 0.50);
         left: 0;
         right: 0;
         top: 0;
@@ -16,18 +17,30 @@ body{
     }
 }
 
-$tertiary-color: rgb(243, 171, 77);
+
+$tertiary-color: rgb(86, 130, 211);
 $secondary-color: rgb(250, 196, 116);
 $primary-color: rgb(255, 226, 189);
 $color: rgb(255, 248, 224);
 
 
+.top-section{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #landing{
-    width: 60%;
-    height: 90%;
+    width: 50%;
+    height: 80%;
     background-color: $color;
     position: relative;
+    //display: block;
+    
+    
     
     &::before{
         content: "";
@@ -38,8 +51,9 @@ $color: rgb(255, 248, 224);
     }
 
     h1{
+        font-family: fantasy;
         font-weight: 10%0;
-        font-size: 40px;
+        font-size: 60px;
         text-transform: uppercase;
     }
 
@@ -51,23 +65,42 @@ $color: rgb(255, 248, 224);
         text-decoration: none;
         color: $secondary-color;
         transition: 1s;
-    
+        font-style: italic;
+        font-size: 1.5rem;
         &:hover{
             color: $tertiary-color;
             text-decoration: underline;
         }
     }
 
-    .landing-container{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        padding: 0 16px;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.skills{
+    border-radius: 0;
+    padding: 2%;
+    width: 15%;
+    height: 20%;
+    background: #040404;
+    color: $color;
+
+    #skills-title{
+        font-family: fantasy;
+    }
+
+    .skill-progress{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .percent{
+        text-align: center;
+        font-size: 200%;
+        font-family: fantasy;
     }
 }
