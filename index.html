@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author"  content="Alisson Corrales">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>  
+
+    <nav class="navbar navbar-expand-lg navbar-lg">
+        <a class="navbar-brand" href="#">portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="top-section">
         <!--landing bit-->
         <section id="landing">
@@ -22,51 +47,74 @@
         </section>
         <!--/landing bit-->
 
+        <br>
+
         <!--about me-->
-        <div class="about" id="about">
-            <div class="container">
-                <div class="section-title">
-                    <div class="about-me">
-                        <h1>Hey, Get To Know Me</h1>
-                        <p>I grew up in the part of Arizona with no snow but all of the dust and UV rays.</p>
-                        <ul>
-                            <li>street address</li>
-                            <li>Phone #</li>
-                            <li>Email Address</li>
-                        </ul>
+        <div class="about-grid">
+                <div class="container">
+                    <div class="section">
+                        <div class="about-me">
+                            <h2>Hey, Get To Know Me</h2>
+                            <p>I grew up in the part of Arizona with no snow but all of the dust and UV rays. I can also do digital art, I'm flexible as to what I can do.</p>
+                            <ul>
+                                <li>85305 Glendale</li>
+                                <li>823-</li>
+                                <li><a href="alisson.corrales24@email.com"> alisson.corrales24@email.com </a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <img src="#" alt="me" class="img-fluid image-md-" id="image">
         </div>
         <!--/about me-->
 
+        <br>
+        <hr>
+        <br>
+
         <!--Skills-->
-        <div class="skills" id="skills container">
+        <div class="skills container" id="skills-container">
             <div id="skills-title">
                 <h2>Coding Skills</h2>
             </div>
             <div class="row skills-content">
                 <div class="col-lg-3">
-                    <div class="skill-progress"> <p class="title">HTML</p> <p class="percent">80%</div>
-                    <div class="skill-progress"> <p class="title">CSS</p> <p class="percent">70%</div>
-                    <div class="skill-progress"> <p class="title">JS</p> <p class="percent">75%</div>
-                    <div class="skill-progress"> <p class="title">SASS</p> <p class="percent">70%</div> 
-                    <div class="skill-progress"> <p class="title">jQuery</p> <p class="percent">50%</div>
-                    <div class="skill-progress"> <p class="title">Bootstrap</p> <p class="percent">25%</div>
+                    <div class="skill-progress"> <span class="title">HTML <p class="percent">80%</p></span></div>
+                    <div class="skill-progress"> <span class="title">CSS <p class="percent">70%</p></span></div>
+                    <div class="skill-progress"> <span class="title">JS <p class="percent">75%</p></span></div>
+                    <div class="skill-progress"> <span class="title">SASS <p class="percent">70%</p></span></div> 
+                    <div class="skill-progress"> <span class="title">jQuery <p class="percent">50%</p></span></div>
+                    <div class="skill-progress"> <span class="title">Bootstrap <p class="percent">25%</p></span></div>
                 </div>
+                
             </div>
         </div>
         <!--/Skills-->
 
-        <!--Resume-->
-        <div class="resume" id="container">
-            <div id="resume-title">Education</div>
-            <div id="resume-item">
-                <h4></h4>
+        <br>
+        <hr>
+        <br>
 
+        <!--Resume-->
+        <div class="resume container" id="container">
+            <h2 id="resume-title">Education</h2>
+            <!--RSK-->
+            <div id="resume-item">
+                <h4>I have not yet graduated</h4>
+                <h5>Class of 2022</h5>
+                <p>Attending Raymond S. Kellis</p>
+                <p>I got a 3.7 GPA and attended a JTED during my junior and senior years</p>
+            </div>
+            <!--WestMec-->
+            <div id="resume-item">
+                <h4>I have not yet graduated</h4>
+                <h5>Class of 2022</h5>
+                <p>Attending West-MEC</p>
+                <p>I have a passing grade.</p>
             </div>
         </div>
         <!--/Resume-->
+
 
     </div>
 

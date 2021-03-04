@@ -1,16 +1,16 @@
 $tertiary-color: rgb(86, 130, 211);
-$secondary-color: rgb(250, 196, 116);
-$primary-color: rgb(255, 226, 189);
+$secondary-color: rgb(250, 184, 86);
+$primary-color: rgb(253, 215, 165);
 $color: rgb(255, 248, 224);
-$background: #27131b;
+$background: #20212e;
 
 body{
     font-family: helvetica;
     position: relative;
-    //background: url(https://images.pexels.com/photos/2911519/pexels-photo-2911519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
     background: $background;
     background-size: cover;
     color: $color;
+    text-align: left;
 
     &::before{
         content: "";
@@ -18,16 +18,59 @@ body{
         right: 0;
         top: 0;
         bottom: 0;
+        margin: 0 0 0 10px;
         position: fixed;
         height: 100vh;
         z-index: -1;
     }
+
+    h1{
+        font-family: fantasy;
+        font-size: 500%;
+    }
+
+    h2{
+        font-family: fantasy;
+        font-size: 300%;
+    }
+
+    a{
+        font-size: 110%;
+        font-style: italic;
+        transition: 1s;
+        color: $color;
+
+        &hover{
+            color: $tertiary-color;
+        }
+    }
+
+    hr{
+        border: solid 1px;
+        width: 95%;
+        color: $color;
+    }
+
+    .container{
+            margin-left: auto;
+    }
+}
+
+
+//navbar
+.navbar{
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 
 //landing-page
 #landing{
-    background: url(https://images.pexels.com/photos/3385354/pexels-photo-3385354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: url(https://images.pexels.com/photos/2911519/pexels-photo-2911519.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
     position: relative;
     width: 100%;
@@ -35,7 +78,7 @@ body{
 
     &::before{
         content: "";
-        background: rgba(73, 73, 73, 0.2);
+        background: rgba(43, 42, 42, 0.6);
         left: 0;
         right: 0;
         top: 0;
@@ -50,118 +93,69 @@ body{
         bottom: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
-        padding: 0 15px;
+        margin: 0 0 0 10%;
+    }
+    h1{
+        font-family: fantasy;
+        font-size: 500%;
+    }
+    
+}
+
+
+//About me section
+.about-grid{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 22%;
+    #image{
+        border-radius: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @media screen and (max-width: 945px){
+        margin-left: 10%;
+    }
+
+    @media screen and (max-width: 770px) {
+        flex-direction: column;     
+        
+        #image{
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
     }
 }
 
 
-//landing-page
-//#landing{
-//    width: 5%;
-//    height: 100vh;
-//    background-color: $color;
-//    position: relative;
-//    display: block;
-//    
-//    &::before{
-//        content: "";
-//        top: 0;
-//        right: 0;
-//        bottom: 0;
-//        left: 0;
-//    }
-//
-//    .text{
-//        margin-left: 1%;
-//    }
-//
-//    h1{
-//        font-family: fantasy;
-//        font-weight: 100px;
-//        font-size: 60px;
-//        text-transform: uppercase;
-//    }
-//
-//    h2{
-//        font-size: 20px;
-//    }
-//
-//    #link{
-//        text-decoration: none;
-//        color: $secondary-color;
-//        transition: 1s;
-//        font-style: italic;
-//        font-size: 1.5rem;
-//        &:hover{
-//            color: $tertiary-color;
-//            text-decoration: underline;
-//        }
-//    }
-//
-//    img{
-//        display: block;
-//        margin-left: auto;
-//        margin-right: auto;
-//        width: 100%;
-//    }
-//}
-//.about{
-//    position: relative;
-//    padding: 2%;
-//    width: 20%;
-//    height: 100vh;
-//    background: #212236;
-//    color: $color;
-//
-//    &::before{
-//        position: relative;
-//        width: 100%;
-//    }
-//
-//    h1{
-//        font-family: fantasy;
-//        font-weight: 100px;
-//
-//    }    
-//}
-//
-//
-//.skills{
-//    position: relative;
-//    padding: 50px;
-//    width: 75%;
-//    height: 50%;
-//    color: $color;
-//
-//    #skills-title{
-//        font-family: fantasy;
-//    }
-//
-//    .col-lg-3{
-//        display: grid;
-//        grid-template-columns: auto auto;
-//        justify-content: left;
-//        grid-gap: 50px;
-//    }
-//
-//    .percent{
-//        text-align: center;
-//        font-size: 300%;
-//        font-family: fantasy;
-//    }
-//}
-//
-//
-//.resume{
-//    //width: 75%;
-//    color: $color;
-//    padding: 0 0 0 20px;
-//
-//    #resume-title{
-//        font-family: fantasy;
-//        font-size: 300%;
-//
-//    }
-//}
+//skills
+.skills{
+    .col-lg-3{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 15%;
+    }
+    .skill-progress{
+        display: flex;
+        //border-radius: 0;
+        flex-direction: row;
+    }
+    .title{
+        text-transform: uppercase;
+        padding: 10px 0;
+        display: block;
+    }
+    .percent{
+        font-family: fantasy;
+        font-size: 500%;
+    }
+}
+
+
+//education
