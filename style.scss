@@ -4,6 +4,7 @@ $primary-color: rgb(253, 215, 165);
 $color: rgb(255, 248, 224);
 $background: #20212e;
 
+//everything
 body{
     font-family: helvetica;
     position: relative;
@@ -34,6 +35,12 @@ body{
         font-size: 300%;
     }
 
+    h3{
+        background-color: $secondary-color;
+        width: 38%;
+        padding: 1%;
+    }
+
     a{
         font-size: 110%;
         font-style: italic;
@@ -45,13 +52,17 @@ body{
         }
     }
 
+    br{
+        height: 2rem;
+    }
+
     hr{
         border: solid 1px;
         width: 95%;
         color: $color;
     }
 
-    .container{
+    .container-fluid{
             margin-left: auto;
     }
 }
@@ -100,6 +111,12 @@ body{
         font-family: fantasy;
         font-size: 500%;
     }
+    .fa{
+        padding-top: .5rem;
+        padding-left: .5rem;
+        padding-right: .5rem;;
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -110,40 +127,29 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 7%;
-    margin-right: 22%;
     #image{
         border-radius: 100%;
         margin-top: auto;
         margin-bottom: auto;
+        margin-right: 5%;
     }
 
-    @media screen and (max-width: 945px){
-        margin-left: 10%;
-    }
-
-    @media screen and (max-width: 770px) {
-        flex-direction: column;     
-        
-        #image{
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
     }
 }
 
 
 //skills
 .skills{
-    .col-lg-3{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 15%;
+    .skills-content{
+        position: relative;
+        display: flex;
+        flex-direction: row;
     }
+
     .skill-progress{
         display: flex;
-        //border-radius: 0;
         flex-direction: row;
     }
     .title{
@@ -153,9 +159,49 @@ body{
     }
     .percent{
         font-family: fantasy;
-        font-size: 500%;
+        font-size: 625%;
+    }
+    #compu{
+        background-color: $secondary-color;
+        border-radius: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 2rem;
+    }
+    
+    .col-lg-6{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20%;
+        .col-lg-6{
+
+            @media screen and (max-width: 1000px) {
+                grid-column-gap: 30%;
+            }
+            @media screen and (max-width: 700px) {
+                .percent{
+                    font-family: fantasy;
+                    font-size: 325%;
+                }
+            }
+            @media screen and (max-width: 290px) {
+                grid-column-gap: 10%;
+            }
+            @media screen and (max-width: 245px) {
+                grid-template-columns: auto;
+            }
+        }
     }
 }
 
 
 //education
+.resume{
+    .resume-item{
+        position: relative;
+    }
+
+    h3,h4{
+        font-weight: bold;
+    }
+}

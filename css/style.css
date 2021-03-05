@@ -29,6 +29,12 @@ body h2 {
   font-size: 300%;
 }
 
+body h3 {
+  background-color: #fab856;
+  width: 38%;
+  padding: 1%;
+}
+
 body a {
   font-size: 110%;
   font-style: italic;
@@ -41,13 +47,17 @@ body ahover {
   color: #5682d3;
 }
 
+body br {
+  height: 2rem;
+}
+
 body hr {
   border: solid 1px;
   width: 95%;
   color: #fff8e0;
 }
 
-body .container {
+body .container-fluid {
   margin-left: auto;
 }
 
@@ -102,6 +112,13 @@ body .container {
   font-size: 500%;
 }
 
+#landing .fa {
+  padding-top: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: 1.5rem;
+}
+
 .about-grid {
   position: relative;
   display: -webkit-box;
@@ -112,42 +129,33 @@ body .container {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 7%;
-  margin-right: 22%;
 }
 
 .about-grid #image {
   border-radius: 100%;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 5%;
 }
 
-@media screen and (max-width: 945px) {
-  .about-grid {
-    margin-left: 10%;
-  }
-}
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 700px) {
   .about-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-grid #image {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
 }
 
-.skills .col-lg-3 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  grid-column-gap: 15%;
+.skills .skills-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .skills .skill-progress {
@@ -168,5 +176,56 @@ body .container {
 
 .skills .percent {
   font-family: fantasy;
-  font-size: 500%;
+  font-size: 625%;
 }
+
+.skills #compu {
+  background-color: #fab856;
+  border-radius: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 2rem;
+}
+
+.skills .col-lg-6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-column-gap: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills .col-lg-6 .col-lg-6 {
+    grid-column-gap: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills .col-lg-6 .col-lg-6 .percent {
+    font-family: fantasy;
+    font-size: 325%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .skills .col-lg-6 .col-lg-6 {
+    grid-column-gap: 10%;
+  }
+}
+
+@media screen and (max-width: 245px) {
+  .skills .col-lg-6 .col-lg-6 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.resume .resume-item {
+  position: relative;
+}
+
+.resume h3, .resume h4 {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
