@@ -37,7 +37,7 @@ body{
 
     h3{
         background-color: $secondary-color;
-        width: 38%;
+        //width: 38%;
         padding: 1%;
     }
 
@@ -142,16 +142,6 @@ body{
 
 //skills
 .skills{
-    .skills-content{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .skill-progress{
-        display: flex;
-        flex-direction: row;
-    }
     .title{
         text-transform: uppercase;
         padding: 10px 0;
@@ -161,47 +151,78 @@ body{
         font-family: fantasy;
         font-size: 625%;
     }
-    #compu{
-        background-color: $secondary-color;
-        border-radius: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 2rem;
-    }
+    //#compu{
+        //background-color: $secondary-color;
+        //border-radius: 100%;
+        //margin-top: auto;
+        //margin-bottom: auto;
+        //padding: 2rem;
+        //float: left;
+    //}
     
-    .col-lg-6{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 20%;
-        .col-lg-6{
+    .whole-chart{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-            @media screen and (max-width: 1000px) {
-                grid-column-gap: 30%;
-            }
-            @media screen and (max-width: 700px) {
-                .percent{
-                    font-family: fantasy;
-                    font-size: 325%;
-                }
-            }
-            @media screen and (max-width: 290px) {
-                grid-column-gap: 10%;
-            }
-            @media screen and (max-width: 245px) {
-                grid-template-columns: auto;
+    .col-lg-6{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 45%;
+
+        @media screen and (max-width: 1000px) {
+            grid-column-gap: 30%;
+        }
+        @media screen and (max-width: 700px) {
+            .percent{
+                font-family: fantasy;
+                font-size: 325%;
             }
         }
+        @media screen and (max-width: 445ox){
+            grid-template-columns: auto atuo;
+        }
+        @media screen and (max-width: 290px) {
+            grid-column-gap: 10%;
+        }
+        @media screen and (max-width: 245px) {
+            grid-template-columns: auto;
+        }
+        }
     }
-}
+
 
 
 //education
 .resume{
-    .resume-item{
+    .col-lg-6{
+        display: grid;
+        grid-template-columns: auto auto;
         position: relative;
+        grid-column-gap: 15%;
+        //gap: 100px;
     }
 
-    h3,h4{
+    .resume-title{
+        text-transform: uppercase;
+        padding: 15px ;
+        display: flex;
+        flex-direction: row;
+        gap: 4%
+        //gap: 100px;
+    }
+
+
+
+    h3{
         font-weight: bold;
+        height: 10%;
     }
 }
+
