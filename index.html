@@ -18,22 +18,22 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="#" class="navbar-brand mb-0 h1">portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target="#navbarSuppportedContent" aria-expanded='false' aria-label="Toggle Navigation">
+            <button class="navbar-toggler collapsed" type="button" data-toggle='collapse' aria-controls="navbarSuppportedContent" data-target="#navbarSuppportedContent" aria-expanded='false' aria-label="Toggle Navigation">
                 <span class='navbar-toggler-icon'> ||| </span> 
             </button>
-            <div class="collapse navbar-collapse" id="navbarSuppportedContent">
+            <div class="navbar-collapse collapse" id="navbarSuppportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Top </a>
+                        <a href="#about-me" class="nav-link"> About Me </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> About Me </a>
+                        <a href="#skills" class="nav-link"> Skills </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Skills </a>
+                        <a href="#showcase" class="nav-link"> Work </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Resume </a>
+                        <a href="#resume" class="nav-link"> Resume </a>
                     </li>
             </div>
         </div>
@@ -57,13 +57,15 @@
         </section>
         <!--/landing bit-->
 
+        <hr  id="about-me">
+        <br>
         <br>
 
         <!--about me-->
         <div class="about-grid">
                 <div class="container-fluid">
                     <div class="section">
-                        <div class="about-me">
+                        <div class="about">
                             <h2>Hey, Get To Know Me</h2>
                             <p>I grew up in the part of Arizona with no snow but all of the dust and UV rays. I can also do digital art, and love to design things. Have some lorem ipsum to fill the space here: Lorem ipsum, dolor sit amet consectetur adipisicing elit. A harum, magnam quibusdam nam dolores quia velit minima iusto laborum nisi, aperiam totam atque accusamus modi amet dicta molestiae repellendus facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem eius veritatis commodi doloribus, architecto fugit necessitatibus. Quo consequuntur, nobis, saepe autem totam, iste necessitatibus non debitis ut nulla labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure eveniet quidem dicta labore repellendus repudiandae laudantium dolores libero odit, odio magnam placeat illum fuga officiis nam, eos, numquam nulla!</p>
 
@@ -81,24 +83,24 @@
         </div>
         <!--/about me-->
 
-        <br>
+        <br id="skills">
         <hr>
         <br>
 
         <!--Skills-->
-        <div class="skills container" id="skills">
+        <div class="skills container">
             <div id="skills-title">
                 <h2>Coding Skills</h2>
             </div>
             <div class="row skills-content">
                 <div class="whole-chart">
                 <div class="col-lg-6">
-                        <div class="skill-progress"> <span class="title">HTML <p class="percent">80%</p></span></div>
-                        <div class="skill-progress"> <span class="title">CSS <p class="percent">70%</p></span></div>
-                        <div class="skill-progress"> <span class="title">JS <p class="percent">75%</p></span></div>
-                        <div class="skill-progress"> <span class="title">SASS <p class="percent">70%</p></span></div> 
-                        <div class="skill-progress"> <span class="title">jQuery <p class="percent">50%</p></span></div>
-                        <div class="skill-progress"> <span class="title">Bootstrap <p class="percent">25%</p></span></div>
+                        <div class="skill-progress"> <span class="title">HTML <p class="percent" id="1">0</p></span></div>
+                        <div class="skill-progress"> <span class="title">CSS <p class="percent" id="2">70%</p></span></div>
+                        <div class="skill-progress"> <span class="title">JS <p class="percent" id="3">75%</p></span></div>
+                        <div class="skill-progress"> <span class="title">SASS <p class="percent" id="4">70%</p></span></div> 
+                        <div class="skill-progress"> <span class="title">jQuery <p class="percent" id="5">50%</p></span></div>
+                        <div class="skill-progress"> <span class="title">Bootstrap <p class="percent" id="6">25%</p></span></div>
                 </div>
                 <!--<img src="compu.png" alt="" id="compu" width="25%">-->
                 </div>
@@ -107,15 +109,32 @@
         </div>
         <!--/Skills-->
 
+        <br id="showcase">
+        <hr>
         <br>
+
+        <!--Showcase-->
+        <div class="showcase">
+            <h2>My Work</h2>
+            <ul class="websites">
+                <li id="weblinks"><img src="images/webTicTac.png" alt="tic tac website screen" width="65%"></li>
+                <li>Tic Tac Toe website</li>
+                <li id="weblinks"><img src="images/webTicTac.png" width="65%"" alt="holder"></li>
+                <li>Cow Website</li>
+            </ul>
+        </div>
+        <!--/Showcase-->
+
+
+        <br id="resume">
         <hr>
         <br>
 
         <!--Resume-->
-        <div class="resume container" id="container">
+        <div class="resume container">
             <h2>Resume</h2>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title1">Education</h3>
             <div class="col-lg-6">
             <!--RSK-->
             <div id="resume-item">
@@ -133,17 +152,15 @@
             </div>
             </div>
 
-            <div class="resume-title">
-                <h3 id="title">Certifications</h3>
-                <h3 id="title">Professional Experience</h3>
-            </div>
 
-            <div class="col-lg-6">
-            <div id="resume-item">
-                <p>None. Yet. According to OSHA, I know the health risks in working.</p>
-            </div>
-            <div id="resume-item">
-                <p>None yet.</p>
+            <div class="col-lg-5">
+                <h3 id="title">Professional Experience</h3>
+                <div id="resume-item">
+                    <p>None yet.</p>
+                </div>
+                <h3 id="title">Certifications</h3>
+                <div id="resume-item">
+                    <p>None. Yet. According to OSHA, I know the health risks in working.</p>
             </div>
             </div>
         </div>
@@ -151,25 +168,11 @@
         <!--/Resume-->
 
         <br>
-        <hr>
         <br>
 
-        <!--Showcase-->
-        <div class="showcase">
-            <h2>My Work</h2>
-        </div>
-        <!--/Showcase-->
-
-
-
-
-    <!--
-        *A small resume
-        *A showcase of your work
-        *A landing page
-        *A way to contact you 
-        *Only be 1 page, you can have it show hide to other content but it should never open a new page. (the showcase will take you to new pages) 
-    -->
+        <footer class="text-center text-lg-start">
+            © 2020 Copyright lolololo
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="main.js"></script>

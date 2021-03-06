@@ -1,10 +1,13 @@
 $tertiary-color: rgb(86, 130, 211);
 $secondary-color: rgb(250, 184, 86);
-$primary-color: rgb(253, 215, 165);
+$primary-color: rgb(147, 190, 240);
 $color: rgb(255, 248, 224);
 $background: #20212e;
 
 //everything
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: helvetica;
     position: relative;
@@ -198,6 +201,24 @@ body{
     }
 
 
+//showcase
+.showcase{
+    position: relative;
+    margin-left: 13.5%;
+
+    ul{
+        padding-inline-start: 0;
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .websites{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1%;
+        list-style-type: none;
+    }
+}
+
 
 //education
 .resume{
@@ -205,24 +226,49 @@ body{
         display: grid;
         grid-template-columns: auto auto;
         position: relative;
-        grid-column-gap: 15%;
-        //gap: 100px;
+        
+        @media screen and (max-width: 454px) {
+            grid-template-columns: auto;
+        }
     }
 
-    .resume-title{
+    .col-lg-5{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        
+        @media screen and (max-width: 454px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    .resume-title1{
         text-transform: uppercase;
         padding: 15px ;
         display: flex;
         flex-direction: row;
-        gap: 4%
-        //gap: 100px;
+        gap: 4%;
+
+        @media screen and (max-width: 454px) {
+            flex-direction: column;
+        }
+    }
+    .resume-title2{
+        text-transform: uppercase;
+        padding: 15px ;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 4%;
     }
 
-
-
     h3{
+        background-color: $primary-color;
         font-weight: bold;
-        height: 10%;
     }
 }
 
+
+footer{
+    background-color: $secondary-color;
+    padding: 1rem;
+}
