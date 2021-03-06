@@ -106,22 +106,37 @@ body{
         left: 0;
         bottom: 0;
         display: flex;
+        align-self: center;
         justify-content: center;
         flex-direction: column;
         margin: 0 0 0 10%;
     }
-    h1{
+    #typing{
         font-family: fantasy;
         font-size: 500%;
-    }
+        width: 12.7ch;
+        animation: typing 4s steps(15), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        }
+    //based VERY heavily off of this: (https://codepen.io/denic/pen/GRoOxbM)
+
     .fa{
         padding-top: .5rem;
         padding-left: .5rem;
         padding-right: .5rem;;
         font-size: 1.5rem;
     }
-    
 }
+@keyframes typing{
+    from{
+        width: 0}
+}
+@keyframes blink{
+    50% {
+        border-color: transparent}
+    }
 
 
 //About me section

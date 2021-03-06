@@ -100,6 +100,8 @@ body .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -110,9 +112,15 @@ body .container-fluid {
   margin: 0 0 0 10%;
 }
 
-#landing h1 {
+#landing #typing {
   font-family: fantasy;
   font-size: 500%;
+  width: 12.7ch;
+  -webkit-animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
+          animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 
 #landing .fa {
@@ -120,6 +128,30 @@ body .container-fluid {
   padding-left: .5rem;
   padding-right: .5rem;
   font-size: 1.5rem;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .about-grid {
@@ -311,4 +343,3 @@ footer {
   background-color: #fab856;
   padding: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
