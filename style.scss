@@ -7,7 +7,17 @@ $background: #20212e;
 //everything
 html{
     scroll-behavior: smooth;
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: $background;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: $primary-color;
+    }
 }
+
 body{
     font-family: helvetica;
     position: relative;
@@ -79,6 +89,10 @@ body{
     right: 0;
     left: 0;
     z-index: 1030;
+
+    #title{
+        font-weight: bolder;
+    }
 }
 
 

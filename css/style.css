@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+html ::-webkit-scrollbar {
+  width: 20px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: #20212e;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #93bef0;
+}
+
 body {
   font-family: helvetica;
   position: relative;
@@ -71,6 +83,10 @@ body .container-fluid {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.navbar #title {
+  font-weight: bolder;
 }
 
 #landing {
@@ -343,3 +359,4 @@ footer {
   background-color: #fab856;
   padding: 1rem;
 }
+/*# sourceMappingURL=style.css.map */
