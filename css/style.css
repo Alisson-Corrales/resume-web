@@ -267,25 +267,8 @@ body .container-fluid {
   }
 }
 
-.showcase {
-  position: relative;
-  margin-left: 13.5%;
-}
-
-.showcase ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  font-weight: bold;
-  font-size: 120%;
-}
-
-.showcase .websites {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  grid-gap: 1%;
-  list-style-type: none;
+.row .card {
+  background-color: #5682d3;
 }
 
 .resume .col-lg-6 {
@@ -359,4 +342,3 @@ footer {
   background-color: #fab856;
   padding: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
