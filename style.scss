@@ -19,6 +19,7 @@ html{
 }
 
 body{
+    box-sizing: initial;
     font-family: helvetica;
     position: relative;
     background: $background;
@@ -129,10 +130,13 @@ body{
         font-family: fantasy;
         font-size: 500%;
         width: 12.7ch;
-        animation: typing 4s steps(15), blink .5s step-end infinite alternate;
+        animation: typing 4s steps(15), blink .5s step-end infinite;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
+        @media screen and (max-width: 630px){
+           white-space: normal;
+        }
         }
     //based VERY heavily off of this: (https://codepen.io/denic/pen/GRoOxbM)
 
@@ -164,6 +168,9 @@ body{
         margin-top: auto;
         margin-bottom: auto;
         margin-right: 5%;
+        @media screen and(max-width:700px){
+            display: none;
+        }
     }
 
     @media screen and (max-width: 700px) {
@@ -197,6 +204,25 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-right: 200px;
+        @media screen and (max-width: 990px){
+            margin-right: 125px;
+        }
+        @media screen and (max-width: 750px){
+            margin-right: 100px;
+        }
+        @media screen and (max-width: 500px){
+            margin-right: 50px;
+        }
+        @media screen and (max-width: 320px){
+            margin-right: 30px;
+        }
+        @media screen and (max-width: 260px){
+            margin-right: 10px;
+        }
+        @media screen and (max-width: 160px){
+            margin-right: 2px;
+        }
     }
 
     .col-lg-6{
@@ -211,17 +237,32 @@ body{
         @media screen and (max-width: 1000px) {
             grid-column-gap: 30%;
         }
-        @media screen and (max-width: 700px) {
-            .percent{
-                font-family: fantasy;
-                font-size: 325%;
-            }
+
+        @media screen and (max-width: 990px){
+            grid-column-gap: 10%;
         }
-        @media screen and (max-width: 445ox){
-            grid-template-columns: auto atuo;
+
+        @media screen and (max-width: 900px){
+            grid-column-gap: 10%;
+        }
+
+        @media screen and (max-width: 800px){
+            grid-column-gap: 10%;
+        }
+
+        @media screen and (max-width: 700px) {
+            grid-template-columns: auto auto;
+        }
+        @media screen and (max-width: 450px) {
+            .percent{
+                font-size: 400%;
+            }
         }
         @media screen and (max-width: 290px) {
             grid-column-gap: 10%;
+            .percent{
+                font-size: 325%;
+            }
         }
         @media screen and (max-width: 245px) {
             grid-template-columns: auto;
@@ -231,26 +272,12 @@ body{
 
 
 //showcase
-//.showcase{
-//    position: relative;
-//    margin-left: 13.5%;
-//
-//    ul{
-//        padding-inline-start: 0;
-//        font-weight: bold;
-//        font-size: 120%;
-//    }
-//    .websites{
-//        display: grid;
-//        grid-template-columns: auto;
-//        grid-gap: 1%;
-//        list-style-type: none;
-//        padding: 10px;
-//    }
-//}
-
-//showcase
 .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     .card{
         background-color: $tertiary-color;
     }

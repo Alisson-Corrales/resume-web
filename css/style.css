@@ -15,6 +15,8 @@ html ::-webkit-scrollbar-thumb {
 }
 
 body {
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
   font-family: helvetica;
   position: relative;
   background: #20212e;
@@ -132,11 +134,17 @@ body .container-fluid {
   font-family: fantasy;
   font-size: 500%;
   width: 12.7ch;
-  -webkit-animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
-          animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
+  -webkit-animation: typing 4s steps(15), blink 0.5s step-end infinite;
+          animation: typing 4s steps(15), blink 0.5s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+}
+
+@media screen and (max-width: 630px) {
+  #landing #typing {
+    white-space: normal;
+  }
 }
 
 #landing .fa {
@@ -190,6 +198,12 @@ body .container-fluid {
 }
 
 @media screen and (max-width: 700px) {
+  .about-grid #image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .about-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -220,6 +234,43 @@ body .container-fluid {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 990px) {
+  .skills .whole-chart {
+    margin-right: 125px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .skills .whole-chart {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills .whole-chart {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skills .whole-chart {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .skills .whole-chart {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 160px) {
+  .skills .whole-chart {
+    margin-right: 2px;
+  }
 }
 
 .skills .col-lg-6 {
@@ -240,23 +291,43 @@ body .container-fluid {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .skills .col-lg-6 .percent {
-    font-family: fantasy;
-    font-size: 325%;
+@media screen and (max-width: 990px) {
+  .skills .col-lg-6 {
+    grid-column-gap: 10%;
   }
 }
 
-@media screen and (max-width: 445ox) {
+@media screen and (max-width: 900px) {
   .skills .col-lg-6 {
-    -ms-grid-columns: auto atuo;
-        grid-template-columns: auto atuo;
+    grid-column-gap: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skills .col-lg-6 {
+    grid-column-gap: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills .col-lg-6 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills .col-lg-6 .percent {
+    font-size: 400%;
   }
 }
 
 @media screen and (max-width: 290px) {
   .skills .col-lg-6 {
     grid-column-gap: 10%;
+  }
+  .skills .col-lg-6 .percent {
+    font-size: 325%;
   }
 }
 
@@ -265,6 +336,23 @@ body .container-fluid {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
 }
 
 .row .card {
@@ -342,3 +430,4 @@ footer {
   background-color: #fab856;
   padding: 1rem;
 }
+/*# sourceMappingURL=style.css.map */

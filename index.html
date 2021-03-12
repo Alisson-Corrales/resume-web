@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="author"  content="Alisson Corrales">
+    <meta name="author" content="Alisson Corrales">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>  
+<body>
 
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="#" class="navbar-brand mb-0 h1" id="title">portfolio</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle='collapse' aria-controls="navbarSuppportedContent" data-target="#navbarSuppportedContent" aria-expanded='false' aria-label="Toggle Navigation">
-                <span class='navbar-toggler-icon'> ||| </span> 
+            <button class="navbar-toggler" type="button" data-bs-toggle='collapse'
+                aria-controls="navbarSuppportedContent" data-bs-target="#navbarSuppportedContent" aria-expanded='false'
+                aria-label="Toggle Navigation">
+                <span class='navbar-toggler-icon'> ||| </span>
             </button>
             <div class="navbar-collapse collapse" id="navbarSuppportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link"> About Me </a>
+                    </li>
                     <li class="nav-item">
                         <a href="#skills" class="nav-link"> Skills </a>
                     </li>
@@ -32,6 +38,7 @@
                     <li class="nav-item">
                         <a href="#showcase" class="nav-link"> Work </a>
                     </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -40,82 +47,87 @@
     <div class="top-section">
         <!--landing bit-->
         <section class="container-fluid" id="landing">
-                <div class="landing-container">
-                        <h1 id="typing">Alisson Corrales</h1>
-                        <h2>Artist, Aspiring Video Game Developer</h2>
-                        <a href="#resume" class="btn-scroll scrollto" id="link">See My Resume</a>
-                        <div class="sm-icons">
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="https://www.linkedin.com/in/alisson-corrales-474545208/" class="fa fa-linkedin"></a>
-                            <a href="https://github.com/Alisson-Corrales" class="fa fa-github"></a>
-                        </div>
-                    </div>
-                </div> 
-        </section>
-        <!--/landing bit-->
-
-        <hr  id="about-me">
-        <br>
-        <br>
-
-        <!--about me-->
-        <div class="about-grid">
-                <div class="container-fluid">
-                    <div class="section">
-                        <div class="about">
-                            <h2>Hey, Get To Know Me</h2>
-                            <p>I grew up in the part of Arizona with no snow but all of the dust and UV rays. I can also do digital art, and love to design things. Have some lorem ipsum to fill the space here: Lorem ipsum, dolor sit amet consectetur adipisicing elit. A harum, magnam quibusdam nam dolores quia velit minima iusto laborum nisi, aperiam totam atque accusamus modi amet dicta molestiae repellendus facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem eius veritatis commodi doloribus, architecto fugit necessitatibus. Quo consequuntur, nobis, saepe autem totam, iste necessitatibus non debitis ut nulla labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure eveniet quidem dicta labore repellendus repudiandae laudantium dolores libero odit, odio magnam placeat illum fuga officiis nam, eos, numquam nulla!</p>
-
-                            <h4>Contact Me</h4>
-                            <ul>
-                                <li>Street Adress</li>
-                                <li>823-XXX-XXXX</li>
-                                <li><a href="alisson.corrales24@email.com"> alisson.corrales24@email.com </a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="landing-container">
+                <h1 id="typing">Alisson Corrales</h1>
+                <h2>Artist, Aspiring Video Game Developer</h2>
+                <a href="#resume" class="btn-scroll scrollto" id="link">See My Resume</a>
+                <div class="sm-icons">
+                    <a href="https://www.linkedin.com/in/alisson-corrales-474545208/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Alisson-Corrales" class="fa fa-github"></a>
                 </div>
-            <img src="images/IMG_5872.jpg" alt="blur" class="img-fluid image-md-" id="image" width="28%">
-
-        </div>
-        <!--/about me-->
-
-        <br id="skills">
-        <hr>
-        <br>
-
-        <!--Skills-->
-        <div class="skills container">
-            <div id="skills-title">
-                <h2>Coding Skills</h2>
             </div>
-            <div class="row skills-content">
-                <div class="whole-chart">
+    </div>
+    </section>
+    <!--/landing bit-->
+
+    <hr id="about-me">
+    <br>
+    <br>
+
+    <!--about me-->
+    <div class="about-grid">
+        <div class="container-fluid">
+            <div class="section">
+                <div class="about">
+                    <h2>Hey, Get To Know Me</h2>
+                    <p>I grew up in the part of Arizona with no snow but all of the dust and UV rays. West Mec coding is
+                        a stepping stone right now so I can work later in life in something related to coding. After
+                        that, ideally, I'd want to go to the University of Advancing Technology. The plan is one day
+                        help create video games as a video game designer. On the side I also do digital art. My favorite
+                        things to draw are characters though I dabble with other areas like backgrounds. I very much
+                        like to design things, good design and color palettes are very important to me.</p>
+
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li>823-XXX-XXXX</li>
+                        <li><a href="alisson.corrales24@email.com"> alisson.corrales24@email.com </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="images/IMG_5872.jpg" alt="blur" class="img-fluid image-md-" id="image" width="28%">
+
+    </div>
+    <!--/about me-->
+
+    <br id="skills">
+    <hr>
+    <br>
+
+    <!--Skills-->
+    <div class="skills container">
+        <div id="skills-title">
+            <h2>Coding Skills</h2>
+        </div>
+        <div class="row skills-content">
+            <div class="whole-chart">
                 <div class="col-lg-6">
-                        <div class="skill-progress"> <span class="title">HTML <p class="percent" id="1">80%</p></span></div>
-                        <div class="skill-progress"> <span class="title">CSS <p class="percent" id="2">70%</p></span></div>
-                        <div class="skill-progress"> <span class="title">JS <p class="percent" id="3">75%</p></span></div>
-                        <div class="skill-progress"> <span class="title">SASS <p class="percent" id="4">70%</p></span></div> 
-                        <div class="skill-progress"> <span class="title">jQuery <p class="percent" id="5">50%</p></span></div>
-                        <div class="skill-progress"> <span class="title">Bootstrap <p class="percent" id="6">25%</p></span></div>
+                    <div class="skill-progress"> <span class="title">HTML <p class="percent" id="1">80%</p></span></div>
+                    <div class="skill-progress"> <span class="title">CSS <p class="percent" id="2">70%</p></span></div>
+                    <div class="skill-progress"> <span class="title">JS <p class="percent" id="3">75%</p></span></div>
+                    <div class="skill-progress"> <span class="title">SASS <p class="percent" id="4">70%</p></span></div>
+                    <div class="skill-progress"> <span class="title">jQuery <p class="percent" id="5">50%</p></span>
+                    </div>
+                    <div class="skill-progress"> <span class="title">Bootstrap <p class="percent" id="6">25%</p></span>
+                    </div>
                 </div>
                 <!--<img src="compu.png" alt="" id="compu" width="25%">-->
-                </div>
+            </div>
             <!--image via https://publicdomainvectors.org/en/free-clipart/Simple-PC-computer-icon-vector-drawing/17383.html-->
         </div>
-        </div>
-        <!--/Skills-->
+    </div>
+    <!--/Skills-->
 
-        <br id="resume">
-        <hr>
-        <br>
+    <br id="resume">
+    <hr>
+    <br>
 
-        <!--Resume-->
-        <div class="resume container">
-            <h2>Resume</h2>
+    <!--Resume-->
+    <div class="resume container">
+        <h2>Resume</h2>
 
-            <h3 class="resume-title1">Education</h3>
-            <div class="col-lg-6">
+        <h3 class="resume-title1">Education</h3>
+        <div class="col-lg-6">
             <!--RSK-->
             <div id="resume-item">
                 <h4>Degree I Will Graduate With</h4>
@@ -130,72 +142,61 @@
                 <p>From West-MEC</p>
                 <p>other relevant stuff</p>
             </div>
-            </div>
+        </div>
 
 
-            <div class="col-lg-5">
-                <h3 id="title">Professional Experience</h3>
-                <div id="resume-item">
-                    <p>None yet.</p>
-                </div>
-                <h3 id="title">Certifications</h3>
-                <div id="resume-item">
-                    <p>None. Yet. According to OSHA, I know the health risks in working.</p>
+        <div class="col-lg-5">
+            <h3 id="title">Professional Experience</h3>
+            <div id="resume-item">
+                <p>None yet.</p>
             </div>
+            <h3 id="title">Certifications</h3>
+            <div id="resume-item">
+                <p>None. Yet. According to OSHA, I know the health risks in working.</p>
             </div>
         </div>
-        </div>
-        <!--/Resume-->
+    </div>
+    </div>
+    <!--/Resume-->
 
-        <br id="showcase">
-        <hr>
-        <br>
+    <br id="showcase">
+    <hr>
+    <br>
 
-        <!--Showcase-->
-        <!--
-        <div class="showcase">
-            <h2>My Work</h2>
-            <ul class="websites">
-                <li id="weblinks"><img src="images/webTicTac.png" alt="tic tac website screen" width="65%"></li>
-                <li><a href=""></a> Tic Tac Toe website</li>
-                <li id="weblinks"><img src="images/webMoo.png" width="65%"" alt="holder"></li>
-                <li><a href="https://alisson-corrales.github.io/pictures-of-clowns/">Cow Website</a></li>
-                <li></a></li>
-                <li id="weblinks"><img src="images/webWatch.png" width="65%"" alt="holder"></li>
-                <li><a href="https://alisson-corrales.github.io/stopwatch-jquery/">Stop Watch</a></li>
-            </ul>
-        </div>
-        -->
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img src="images/webMoo.png" alt="image 3" class="card-img-top">
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body">
-                        <h4 class="card-title">Cow Slider Website</h5>
-                            <p></p>
-                            <a href="https://alisson-corrales.github.io/pictures-of-clowns/">link</a>
-                    </div>
+    <!--Showcase-->
+    <div class="container">
+    <h2>Work</h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 mb-4">
+            <div class="card">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img src="images/webMoom.png" alt="image 3" class="card-img-top">
+                </div>
+                <!--Card Body-->
+                <div class="card-body">
+                    <h4 class="card-title">Cow Slider Website</h5>
+                        <p>A website I did for SCSS practice. The lander image also slides images using javascript.</p>
+                        <a href="https://alisson-corrales.github.io/pictures-of-clowns/">check it out!</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <!--Card image-->
-                    <div class="view overlay">
-                        <img src="images/webWatch.png" alt="image 3" class="card-img-top">
-                    </div>
-                    <!--Card Body-->
-                    <div class="card-body">
-                        <h4 class="card-title">Stopwatch Website</h5>
-                            <p></p>
-                            <a href="https://alisson-corrales.github.io/stopwatch-jquery/">link</a>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-4 mb-4">
+            <div class="card">
+                <!--Card image-->
+                <div class="view overlay">
+                    <img src="images/webWatch.png" alt="image 3" class="card-img-top">
+                </div>
+                <!--Card Body-->
+                <div class="card-body">
+                    <h4 class="card-title">Stopwatch Website</h5>
+                        <p>Website with a functioning stopwatch that uses javascript. Minimal SCSS, to focus on its
+                            function.</p>
+                        <a href="https://alisson-corrales.github.io/stopwatch-jquery/">check it out!</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 mb-4">
             <div class="card">
                 <!--Card image-->
                 <div class="view overlay">
@@ -204,23 +205,27 @@
                 <!--Card Body-->
                 <div class="card-body">
                     <h4 class="card-title">Tic Tac Toe Website</h5>
-                        <p></p>
-                        <a href="https://alisson-corrales.github.io/tic-tac-toe/">link</a>
+                        <p>Website with tic tac toe game that works with Javascript. Decked out in CSS because I had the
+                            time.</p>
+                        <a href="https://alisson-corrales.github.io/tic-tac-toe/">check it out!</a>
                 </div>
             </div>
         </div>
-        </div>
-        <!--/Showcase-->
+    </div>
+</div>
+    <!--/Showcase-->
 
-        <br>
-        <br>
+    <br>
+    <br>
 
-        <footer class="text-center text-lg-start">
-            © 2021 Copyright lolololo 
-            |  Images via Pexels
-        </footer>
+    <footer class="text-center text-lg-start">
+        © 2021 Copyright lolololol
+        | Images via Pexels
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"ntegrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
