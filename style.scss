@@ -6,6 +6,9 @@ $background: #20212e;
 
 //everything
 html{
+    @media screen and (max-width: 170px){
+        font-size: 50%;
+    }
     scroll-behavior: smooth;
     ::-webkit-scrollbar{
         width: 20px;
@@ -129,7 +132,6 @@ body{
     #typing{
         font-family: fantasy;
         font-size: 500%;
-        width: 12.7ch;
         animation: typing 4s steps(15), blink .5s step-end infinite;
         white-space: nowrap;
         overflow: hidden;
@@ -137,7 +139,7 @@ body{
         @media screen and (max-width: 630px){
            white-space: normal;
         }
-        }
+    }
     //based VERY heavily off of this: (https://codepen.io/denic/pen/GRoOxbM)
 
     .fa{
@@ -147,6 +149,8 @@ body{
         font-size: 1.5rem;
     }
 }
+
+//name animaition
 @keyframes typing{
     from{
         width: 0}
