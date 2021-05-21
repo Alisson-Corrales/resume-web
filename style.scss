@@ -7,14 +7,14 @@ $background: #20212e;
 //everything
 html{
     @media screen and (max-width: 170px){
-        font-size: 50%;
+        font-size: 90%;
     }
     scroll-behavior: smooth;
     ::-webkit-scrollbar{
         width: 20px;
     }
     ::-webkit-scrollbar-track {
-        background-color: $background;
+        background-color: rgb(101, 123, 139);
     }
     ::-webkit-scrollbar-thumb{
         background-color: $primary-color;
@@ -132,15 +132,7 @@ body{
     #typing{
         font-family: fantasy;
         font-size: 500%;
-        animation: typing 4s steps(15), blink .5s step-end infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        @media screen and (max-width: 630px){
-           white-space: normal;
-        }
     }
-    //based VERY heavily off of this: (https://codepen.io/denic/pen/GRoOxbM)
 
     .fa{
         padding-top: .5rem;
@@ -149,17 +141,6 @@ body{
         font-size: 1.5rem;
     }
 }
-
-//name animaition
-@keyframes typing{
-    from{
-        width: 0}
-}
-@keyframes blink{
-    50% {
-        border-color: transparent}
-    }
-
 
 //About me section
 .about-grid{
